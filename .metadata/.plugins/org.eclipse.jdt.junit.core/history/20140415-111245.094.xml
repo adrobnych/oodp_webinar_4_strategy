@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="com.droidbrew.oodp.stategy.spec" project="CompensationCalculator" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.droidbrew.oodp.stategy.spec.DailyCompensations" time="0.003">
+    <testcase name="testOvertimeSalaryOnWorkingDay" classname="com.droidbrew.oodp.stategy.spec.DailyCompensations" time="0.0"/>
+    <testcase name="testShiftSalaryOnWorkingDay" classname="com.droidbrew.oodp.stategy.spec.DailyCompensations" time="0.001"/>
+    <testcase name="testShiftSalaryOnWeekend" classname="com.droidbrew.oodp.stategy.spec.DailyCompensations" time="0.001"/>
+    <testcase name="testOvertimeSalaryOnWeekend" classname="com.droidbrew.oodp.stategy.spec.DailyCompensations" time="0.001"/>
+  </testsuite>
+</testrun>

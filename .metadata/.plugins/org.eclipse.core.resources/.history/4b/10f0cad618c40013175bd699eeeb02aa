@@ -1,0 +1,5 @@
+package com.droidbrew.oodp.stategy;
+
+public enum PayrollDay {
+
+}

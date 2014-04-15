@@ -1,0 +1,23 @@
+package com.droidbrew.oodp.stategy;
+
+public enum PayrollDay {
+	MONDAY {
+		@Override
+		protected double overtimePay(double hours, double rate) {
+			return hours <= HOURS_PER_SHIFT ? 0 :
+				(hours - HOURS_PER_SHIFT) * payRate;
+		}
+	}, SUNDAY {
+		@Override
+		protected double overtimePay(double hours, double rate) {
+			return hours*rate
+		}
+	};
+
+	public double pay(double hours, double rate) {
+		return hours*rate + overtimePay(hours, rate);
+	}
+
+	
+	abstract protected double overtimePay(double hours, double rate);
+}

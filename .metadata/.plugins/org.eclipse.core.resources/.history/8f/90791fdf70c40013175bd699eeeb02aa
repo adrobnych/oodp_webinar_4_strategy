@@ -1,0 +1,9 @@
+package com.droidbrew.oodp.stategy;
+
+public enum PayrollDay {
+	MONDAY;
+
+	public int pay(int hours, int rate) {
+		return hours*rate;
+	}
+}

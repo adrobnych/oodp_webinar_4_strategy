@@ -1,0 +1,12 @@
+package com.droidbrew.oodp.stategy;
+
+public enum PayrollDay {
+	MONDAY, SUNDAY;
+
+	public double pay(double hours, double rate) {
+		return hours*rate + overtimePay(hours, rate);
+	}
+
+	
+	abstract private double overtimePay(double hours, double rate);
+}

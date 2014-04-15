@@ -1,0 +1,25 @@
+package com.droidbrew.oodp.stategy.spec;
+
+import org.junit.Test;
+
+import com.droidbrew.oodp.stategy.PayrollDay;
+
+import static org.junit.Assert.*;
+
+public class DailyCompensations {
+
+	@Test
+	public void testBaseSalaryOnWorkingDay(){
+		assertEquals(60, PayrollDay.MONDAY.pay(6, 10), 0.0001);
+	}
+	
+	@Test
+	public void testBaseSalaryOnWeekend(){
+		assertEquals(120, PayrollDay.SUNDAY.pay(6, 10), 0.0001);
+	}
+	
+	@Test
+	public void testOvertimeSalaryOnWorkingDay(){
+		assertEquals(120, PayrollDay.TUESDAY.pay(10, 10), 0.0001);
+	}
+}

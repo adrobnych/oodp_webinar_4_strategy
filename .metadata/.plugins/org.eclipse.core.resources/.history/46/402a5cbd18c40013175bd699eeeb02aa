@@ -1,0 +1,14 @@
+package com.droidbrew.oodp.stategy.spec;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class DailyCompensations {
+
+	@Test
+	public void testBaseSalary(){
+		int payRate = 100;
+		int hoursWorked = 6;
+		assertEquals(600, MONDAY.pay(6, 100));
+	}
+}
